@@ -4,27 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>YOUR TITLE HERE</title>
-  <meta name="description" content="YOUR TITLE HERE" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <title>Inference I</title>
+  <meta name="description" content="Inference I" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="YOUR TITLE HERE" />
+  <meta property="og:title" content="Inference I" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="YOUR TITLE HERE" />
+  <meta name="twitter:title" content="Inference I" />
   
   
   
 
-<meta name="author" content="YOUR NAME HERE" />
+<meta name="author" content="AbdulHafiz Abba" />
 
 
-<meta name="date" content="2020-08-10" />
+<meta name="date" content="2024-03-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +31,9 @@
   
   
 
-<link rel="next" href="the-pool-of-tears.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="statistical-concepts-and-reasoning.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +49,16 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -66,12 +73,77 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">SHORT TITLE HERE</a></li>
+<li><a href="./">Inference I</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Down the rabbit-hole</a></li>
-<li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
-<li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction to Statistical Data - Sources, Collection, and Preliminary Analysis</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#sources-of-data"><i class="fa fa-check"></i><b>1.1</b> Sources of Data</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#defining-a-common-language"><i class="fa fa-check"></i><b>1.2</b> Defining a Common Language</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#example-variables"><i class="fa fa-check"></i><b>1.2.1</b> Example Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#types-of-data"><i class="fa fa-check"></i><b>1.3</b> Types of Data</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#primary-data"><i class="fa fa-check"></i><b>1.3.1</b> Primary Data</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#secondary-data"><i class="fa fa-check"></i><b>1.3.2</b> Secondary Data</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#examples"><i class="fa fa-check"></i><b>1.3.3</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#collection-methods"><i class="fa fa-check"></i><b>1.4</b> Collection Methods</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#descriptive-statistics"><i class="fa fa-check"></i><b>1.5</b> Descriptive Statistics</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>1.5.1</b> Measures of Central Tendency</a></li>
+<li class="chapter" data-level="1.5.2" data-path="index.html"><a href="index.html#mean"><i class="fa fa-check"></i><b>1.5.2</b> Mean</a></li>
+<li class="chapter" data-level="1.5.3" data-path="index.html"><a href="index.html#median"><i class="fa fa-check"></i><b>1.5.3</b> Median</a></li>
+<li class="chapter" data-level="1.5.4" data-path="index.html"><a href="index.html#example-3"><i class="fa fa-check"></i><b>1.5.4</b> Example</a></li>
+<li class="chapter" data-level="1.5.5" data-path="index.html"><a href="index.html#mode"><i class="fa fa-check"></i><b>1.5.5</b> Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#measures-of-dispersion---range-variance-and-standard-deviation"><i class="fa fa-check"></i><b>1.6</b> Measures of Dispersion - Range, Variance, and Standard Deviation</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#range"><i class="fa fa-check"></i><b>1.6.1</b> Range</a></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#variance"><i class="fa fa-check"></i><b>1.6.2</b> Variance</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#exploring-graphs-in-statistical-analysis"><i class="fa fa-check"></i><b>1.7</b> Exploring Graphs in Statistical Analysis</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#histograms"><i class="fa fa-check"></i><b>1.7.1</b> 1. Histograms</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#bar-charts"><i class="fa fa-check"></i><b>1.7.2</b> 2. Bar Charts</a></li>
+<li class="chapter" data-level="1.7.3" data-path="index.html"><a href="index.html#boxplot-box-and-whisker-plot"><i class="fa fa-check"></i><b>1.7.3</b> 3. Boxplot (Box-and-Whisker Plot)</a></li>
+<li class="chapter" data-level="1.7.4" data-path="index.html"><a href="index.html#scatterplots"><i class="fa fa-check"></i><b>1.7.4</b> 4. Scatterplots</a></li>
+<li class="chapter" data-level="1.7.5" data-path="index.html"><a href="index.html#line-graphs"><i class="fa fa-check"></i><b>1.7.5</b> 5. Line Graphs</a></li>
+<li class="chapter" data-level="1.7.6" data-path="index.html"><a href="index.html#pie-chart"><i class="fa fa-check"></i><b>1.7.6</b> 6. Pie Chart</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html"><i class="fa fa-check"></i><b>2</b> Statistical Concepts and Reasoning</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-sample-sizes-and-margin-of-error-in-surveys"><i class="fa fa-check"></i><b>2.1</b> Understanding Sample Sizes and Margin of Error in Surveys</a></li>
+<li class="chapter" data-level="2.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#what-is-the-margin-of-error"><i class="fa fa-check"></i><b>2.2</b> What is the Margin of Error?</a></li>
+<li class="chapter" data-level="2.3" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#interpretation-of-the-margin-of-error"><i class="fa fa-check"></i><b>2.3</b> Interpretation of the Margin of Error</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-margin-of-error-in-surveys-gallup-emotions-report"><i class="fa fa-check"></i><b>2.3.1</b> Understanding Margin of Error in Surveys: Gallup Emotions Report</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#types-of-research-studies"><i class="fa fa-check"></i><b>2.4</b> Types of Research Studies</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#experiments-randomized-experiments"><i class="fa fa-check"></i><b>2.4.1</b> Experiments (Randomized Experiments)</a></li>
+<li class="chapter" data-level="2.4.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#observational-studies"><i class="fa fa-check"></i><b>2.4.2</b> Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-standard-scores"><i class="fa fa-check"></i><b>2.5</b> Understanding Standard Scores</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#what-are-standardized-scores"><i class="fa fa-check"></i><b>2.5.1</b> What are Standardized Scores?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-the-normal-curve"><i class="fa fa-check"></i><b>2.6</b> Understanding the Normal Curve</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#characteristics-of-normal-distribution"><i class="fa fa-check"></i><b>2.6.1</b> Characteristics of Normal Distribution</a></li>
+<li class="chapter" data-level="2.6.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#examples-of-normal-curves"><i class="fa fa-check"></i><b>2.6.2</b> Examples of Normal Curves</a></li>
+<li class="chapter" data-level="2.6.3" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#the-empirical-rule"><i class="fa fa-check"></i><b>2.6.3</b> The Empirical Rule</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html"><i class="fa fa-check"></i><b>3</b> Relationships Between Measurement Variables</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html#graphs-for-two-different-measurement-variables"><i class="fa fa-check"></i><b>3.1</b> Graphs for Two Different Measurement Variables</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html#example-5.1-graph-of-two-measurement-variables"><i class="fa fa-check"></i><b>3.1.1</b> Example 5.1 Graph of Two Measurement Variables</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -83,7 +155,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">YOUR TITLE HERE</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Inference I</a>
           </h1>
         </div>
 
@@ -92,13 +164,462 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">YOUR TITLE HERE</h1>
-<p class="author"><em>YOUR NAME HERE</em></p>
-<p class="date"><em>2020-08-10</em></p>
+<h1 class="title">Inference I</h1>
+<p class="author"><em>AbdulHafiz Abba</em></p>
+<p class="date"><em>2024-03-19</em></p>
 </div>
-<div id="down-the-rabbit-hole" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Down the rabbit-hole</h1>
+<div id="introduction-to-statistical-data---sources-collection-and-preliminary-analysis" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction to Statistical Data - Sources, Collection, and Preliminary Analysis<a href="index.html#introduction-to-statistical-data---sources-collection-and-preliminary-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>We will explore the various sources of data, methods of collection, and preliminary analysis using tables and graphs. Understanding these concepts is fundamental to becoming proficient in statistical analysis.</p>
+<div id="sources-of-data" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Sources of Data<a href="index.html#sources-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Statistical data can be sourced from various places, including:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Official Records</strong>: Government agencies, such as the National Bureau of Statistics, provide data on demographics, economics, and other fields. These records often include census data, labor statistics, economic indicators, and more, collected through official surveys and administrative records.</p></li>
+<li><p><strong>Surveys</strong>: Surveys conducted by organizations or researchers collect data directly from respondents. Surveys can be conducted through various means, including online questionnaires, telephone interviews, or in-person interviews. They are often used to gather opinions, preferences, behaviors, and other information from specific populations.</p></li>
+<li><p><strong>Experiments</strong>: Data from controlled experiments provide valuable insights into cause-and-effect relationships. In experimental studies, researchers manipulate one or more variables and observe the effects on other variables. This type of data collection is common in scientific research, clinical trials, and social experiments.</p></li>
+<li><p><strong>Observations</strong>: Data can also be collected through direct observation of phenomena. Observational studies involve observing and recording data without interfering with the subjects. This method is commonly used in fields such as anthropology, ecology, and sociology to study natural behavior and phenomena.</p></li>
+<li><p><strong>Secondary Sources</strong>: Secondary sources involve using data that has already been collected and published by other sources. This can include academic journals, research reports, books, and online databases. Secondary data analysis allows researchers to leverage existing data for new insights or to validate findings from primary research.</p></li>
+<li><p><strong>Sensor Data and Internet of Things (IoT)</strong>: With the advancement of technology, data generated from sensors and IoT devices have become significant sources of information. These data sources provide real-time or near-real-time data on various aspects of the environment, infrastructure, health, and more.</p></li>
+</ol>
+<p>Each source of data has its advantages and limitations, and researchers must carefully consider the appropriateness and quality of the data for their analysis.</p>
+</div>
+<div id="defining-a-common-language" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Defining a Common Language<a href="index.html#defining-a-common-language" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data is a collection of a number of pieces of information. Each specific piece of information is called an observation. The observations are measurements of certain characteristics which we call “variables”. The word “variable” is used because the pieces of information, the observations, vary from one person to the next.</p>
+<div class="figure">
+<img src="images/image1.png" alt="" />
+<p class="caption">Types of Data</p>
+</div>
+<div id="example-variables" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Example Variables<a href="index.html#example-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider the following variables:</p>
+<p><span class="math display">\[
+  \begin{array}
+    \textbf{Number} &amp; \textbf{Variable} &amp; \textbf{Type of Variable} \\
+    \hline
+    1 &amp; \text{Which are you? Near-sighted,} &amp; Categorical \\
+    &amp;far-sighted, neither\\
+    2 &amp; \text{What is your height?} &amp; \text{Measurement and Continuous} \\
+    3 &amp; \text{How many phone calls did you make } &amp; \text{Measurement and Discrete} \\
+    &amp; \text{yesterday on a cell phone?}\\
+    4 &amp; \text{What is your cholesterol level?} &amp; \text{Measurement and Continuous} \\
+    \end{array}
+  \]</span></p>
+<p>Hopefully, you find the classification of the first three variables easy to understand.</p>
+<ul>
+<li><p>Variable #1 is a categorical variable because the possible choices are “words” or “categories.”</p></li>
+<li><p>Variable #2 is a measurement variable because the possible choices are “numbers.” This variable is also called a continuous variable because it can assume a range of values on a continuum. You need an instrument, such as a tape measure or a ruler, to determine height. With measurement variables that are continuous, it is often necessary to use an instrument to determine the value of the variable. Measurement variables that are continuous can be subdivided into fractional parts (subdivided into smaller and smaller units of measurement). Typically, a continuous measurement variable is expressed as “an amount of” something.</p></li>
+<li><p>Variable #3 is a measurement variable because the possible choices are numbers. It is also a discrete variable because one can simply count the number of phone calls made on a cell phone in any given day. The possible numbers are only integers such as 0, 1, 2, …, 50, etc. (Some of you probably make a lot of cell phone calls.) Discrete measurement variables cannot be subdivided into smaller and smaller fractional parts (smaller and smaller units of measurement). Often, a discrete measurement variable is expressed as “a number of” something.</p></li>
+<li><p>Variable #4 is somewhat ambiguous. Obviously what the variable is measuring (cholesterol levels) can be expressed on a continuum of possible values - but subjects are likely to round off or only know their levels as a discrete value. Cholesterol levels must be determined by a blood test where an instrument is used to determine the final value. The reported value represents the concentration of cholesterol in the blood. The appropriate units are milligrams per deciliter (mg/dL). What typically happens is that the value of the cholesterol level is rounded to the nearest whole number. Consequently, the cholesterol level might look like a discrete variable - but the raw values are continuous and, since the amount of “discreteness” is not great, a variable like this would be treated the same way as a continuous variable in any analyses.</p></li>
+<li><p><strong>Sampling Unit:</strong> The individual person, animal, or object that has the measurement (observation) taken on them/it</p></li>
+<li><p><strong>Population:</strong> The entire group of individuals or objects that we wish to know something about. A numerical characteristic of the population is called a parameter.</p></li>
+<li><p><strong>Sampling Frame:</strong> The list of the sampling units from which those to be contacted for inclusion in the sample is obtained. The sampling frame lies between the population and sample. Ideally, the sampling frame should match the population, but rarely does because the population is not usually small enough to list all members of the population.</p></li>
+<li><p><strong>Sample:</strong> Those individuals or objects who provide the data to be collected. Numerical characteristics of the sample are called statistics and are typically used as estimates of population parameters.</p></li>
+</ul>
+<div class="figure">
+<img src="images/image2.png" alt="" />
+<p class="caption">Relationship between Population, Sampling Frame and Sample</p>
+</div>
+</div>
+</div>
+<div id="types-of-data" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Types of Data<a href="index.html#types-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data can be classified into two main types: primary data and secondary data.</p>
+<div id="primary-data" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Primary Data<a href="index.html#primary-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Primary data is collected firsthand by the researcher for a specific purpose. It is original and directly obtained from the source.</p>
+</div>
+<div id="secondary-data" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Secondary Data<a href="index.html#secondary-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Secondary data is collected by someone else for a purpose other than the researcher’s current need. It is already available and can be obtained from sources such as government agencies, research organizations, or published literature.</p>
+</div>
+<div id="examples" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Examples<a href="index.html#examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Primary Data</strong>: Conducting interviews, surveys, experiments, or observations directly.</li>
+<li><strong>Secondary Data</strong>: Using existing datasets from government agencies, academic journals, or industry reports.</li>
+</ul>
+</div>
+</div>
+<div id="collection-methods" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Collection Methods<a href="index.html#collection-methods" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data collection methods vary depending on the source and nature of the data:</p>
+<ul>
+<li><strong>Surveys</strong>: Questionnaires or interviews are commonly used to collect data from individuals or groups.</li>
+<li><strong>Experiments</strong>: Controlled conditions are set up to manipulate variables and observe their effects.</li>
+<li><strong>Observational Studies</strong>: Researchers observe and record data without interfering with the subjects.</li>
+</ul>
+</div>
+<div id="descriptive-statistics" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Descriptive Statistics<a href="index.html#descriptive-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Descriptive statistics summarize and describe the main features of a dataset. Common descriptive statistics include:</p>
+<ul>
+<li><strong>Measures of Central Tendency</strong>: Mean, median, and mode.</li>
+<li><strong>Measures of Dispersion</strong>: Range, variance, and standard deviation.</li>
+</ul>
+<div id="measures-of-central-tendency" class="section level3 hasAnchor" number="1.5.1">
+<h3><span class="header-section-number">1.5.1</span> Measures of Central Tendency<a href="index.html#measures-of-central-tendency" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We will focus on measures of central tendency. Measures of central tendency provide a summary of the central or typical value in a dataset. Understanding these measures is crucial for analyzing and interpreting data effectively.</p>
+<p>Measures of central tendency, also known as central location measures, are statistical measures that provide a single value to describe the center or typical value of a dataset. The three primary measures of central tendency are:</p>
+<ol style="list-style-type: decimal">
+<li><p>Mean: The mean, also known as the average, is calculated by summing up all the values in the dataset and dividing by the total number of values. It is sensitive to extreme values, making it less robust in the presence of outliers.</p></li>
+<li><p>Median: The median is the middle value of a dataset when the values are arranged in ascending or descending order. If the dataset has an odd number of values, the median is the middle value. If the dataset has an even number of values, the median is the average of the two middle values. Unlike the mean, the median is not influenced by extreme values, making it more robust.</p></li>
+<li><p>Mode: The mode is the value that appears most frequently in a dataset. A dataset can have one mode (unimodal), two modes (bimodal), or more (multimodal). Unlike the mean and median, the mode can be determined for both numerical and categorical data.</p></li>
+</ol>
+</div>
+<div id="mean" class="section level3 hasAnchor" number="1.5.2">
+<h3><span class="header-section-number">1.5.2</span> Mean<a href="index.html#mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The mean, denoted by <span class="math inline">\(\bar{x}\)</span> (pronounced as “x bar”), is the arithmetic average of a set of values. It is calculated by summing up all the values in the dataset and dividing by the total number of values.</p>
+<p><span class="math display">\[
+\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+\]</span></p>
+<p>where <span class="math inline">\(x_i\)</span> represents each individual value and <span class="math inline">\(n\)</span> is the total number of values.</p>
+<div id="example" class="section level4 hasAnchor" number="1.5.2.1">
+<h4><span class="header-section-number">1.5.2.1</span> Example<a href="index.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the following dataset: <span class="math inline">\(X = \{10, 15, 20, 25, 30\}\)</span>. To find the mean:</p>
+<p><span class="math display">\[\bar{x} = \frac{10 + 15 + 20 + 25 + 30}{5}\]</span></p>
+<p><span class="math display">\[= \frac{100}{5} = 20 \]</span></p>
+<p>So, the mean of the dataset <span class="math inline">\(X\)</span> is <span class="math inline">\(20\)</span>.</p>
+</div>
+<div id="example-1" class="section level4 hasAnchor" number="1.5.2.2">
+<h4><span class="header-section-number">1.5.2.2</span> Example<a href="index.html#example-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the following dataset representing the exam scores of 10 university students:
+<span class="math display">\[
+\begin{array}
+\textbf{Student ID} &amp; \textbf{Exam Score} \\
+\hline
+1 &amp; 78 \\
+2 &amp; 85 \\
+3 &amp; 92 \\
+4 &amp; 67 \\
+5 &amp; 71 \\
+6 &amp; 88 \\
+7 &amp; 79 \\
+8 &amp; 84 \\
+9 &amp; 90 \\
+10 &amp; 95 \\
+\end{array}
+\]</span>
+To compute the mean exam score, we’ll follow these steps:</p>
+<ul>
+<li>Add up all the exam scores.</li>
+<li>Divide the total by the number of students.</li>
+</ul>
+<p>Let’s calculate the mean:</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{Total exam scores} &amp;= 78 + 85 + 92 + 67 + 71 + 88 + 79 + 84 + 90 + 95 \\
+&amp;= 829
+\end{align*}
+\]</span>
+There are 10 students in total. So, the mean exam score (<span class="math inline">\(\bar{x}\)</span>) is:</p>
+<p><span class="math display">\[\begin{align*}
+\bar{x} &amp;= \frac{829}{10} \\
+&amp;= 82.9
+\end{align*}\]</span></p>
+<p>Thus, the mean exam score for these university students is <span class="math inline">\(82.9\)</span>.</p>
+</div>
+</div>
+<div id="median" class="section level3 hasAnchor" number="1.5.3">
+<h3><span class="header-section-number">1.5.3</span> Median<a href="index.html#median" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The median is the middle value in a sorted dataset. If the dataset has an odd number of values, the median is the middle value. If the dataset has an even number of values, the median is the average of the two middle values.</p>
+<div id="example-2" class="section level4 hasAnchor" number="1.5.3.1">
+<h4><span class="header-section-number">1.5.3.1</span> Example<a href="index.html#example-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the dataset: <span class="math inline">\(Y = \{12, 15, 20, 25, 30, 35\}\)</span>. The median is <span class="math inline">\(20\)</span>, as it is the middle value.</p>
+<p>Consider another dataset: <span class="math inline">\(Z = \{10, 15, 20, 25, 30, 35\}\)</span>. The median is the average of the two middle values, which is <span class="math inline">\(\frac{20 + 25}{2} = 22.5\)</span>.</p>
+</div>
+</div>
+<div id="example-3" class="section level3 hasAnchor" number="1.5.4">
+<h3><span class="header-section-number">1.5.4</span> Example<a href="index.html#example-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider the following dataset representing the exam scores of 12 university students:
+<span class="math display">\[
+\begin{array}
+\textbf{Student ID} &amp; \textbf{Exam Score} \\
+1 &amp; 78 \\
+2 &amp; 85 \\
+3 &amp; 92 \\
+4 &amp; 67 \\
+5 &amp; 71 \\
+6 &amp; 88 \\
+7 &amp; 79 \\
+8 &amp; 84 \\
+9 &amp; 90 \\
+10 &amp; 95 \\
+11 &amp; 62 \\
+12 &amp; 93 \\
+\end{array}
+\]</span>
+To compute the median exam score, we’ll follow these steps:</p>
+<ul>
+<li>Arrange the exam scores in ascending order.</li>
+<li>If the number of scores is odd, the median is the middle value. If the number of scores is even, the median is the average of the two middle values.</li>
+</ul>
+<p>Let’s calculate the median:</p>
+<ul>
+<li>First, arrange the exam scores in ascending order: <span class="math inline">\(62, 67, 71, 78, 79, 84, 85, 88, 90, 92, 93, 95\)</span>.</li>
+<li>Since there are 12 scores (an even number), the median is the average of the 6th and 7th scores.</li>
+</ul>
+<p>The 6th and 7th scores are <span class="math inline">\(84\)</span> and <span class="math inline">\(85\)</span>, respectively.</p>
+<p><span class="math display">\[\begin{align*}
+\text{Median} &amp;= \frac{84 + 85}{2} \\
+&amp;= \frac{169}{2} \\
+&amp;= 84.5
+\end{align*}\]</span></p>
+<p>Thus, the median exam score for these university students is <span class="math inline">\(84.5\)</span>.</p>
+</div>
+<div id="mode" class="section level3 hasAnchor" number="1.5.5">
+<h3><span class="header-section-number">1.5.5</span> Mode<a href="index.html#mode" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The mode is the value that appears most frequently in a dataset. A dataset can have one mode (unimodal), two modes (bimodal), or more (multimodal).</p>
+<div id="example-4" class="section level4 hasAnchor" number="1.5.5.1">
+<h4><span class="header-section-number">1.5.5.1</span> Example<a href="index.html#example-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the dataset: <span class="math inline">\(W = \{10, 15, 20, 20, 25, 30, 30\}\)</span>. The mode of <span class="math inline">\(W\)</span> is <span class="math inline">\(20\)</span> and <span class="math inline">\(30\)</span>, as they both appear twice, making <span class="math inline">\(W\)</span> bimodal.</p>
+</div>
+<div id="example-5" class="section level4 hasAnchor" number="1.5.5.2">
+<h4><span class="header-section-number">1.5.5.2</span> Example<a href="index.html#example-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the following dataset representing the exam scores of 15 university students:
+<span class="math display">\[
+\begin{array}
+\textbf{Student ID} &amp; \textbf{Exam Score} \\
+1 &amp; 78 \\
+2 &amp; 85 \\
+3 &amp; 92 \\
+4 &amp; 67 \\
+5 &amp; 71 \\
+6 &amp; 88 \\
+7 &amp; 79 \\
+8 &amp; 84 \\
+9 &amp; 90 \\
+10 &amp; 85 \\
+11 &amp; 85 \\
+12 &amp; 88 \\
+13 &amp; 95 \\
+14 &amp; 90 \\
+15 &amp; 85 \\
+\end{array}
+\]</span></p>
+<p>To compute the mode exam score, we’ll identify the score that appears most frequently.</p>
+<p>Let’s calculate the mode:</p>
+<ul>
+<li>Count the frequency of each score.</li>
+<li>Identify the score(s) with the highest frequency.</li>
+</ul>
+<p>The frequency distribution of exam scores is as follows:
+<span class="math display">\[
+\begin{array}
+\textbf{Exam Score} &amp; \textbf{Frequency} \\
+78 &amp; 1 \\
+85 &amp; 4 \\
+92 &amp; 1 \\
+67 &amp; 1 \\
+71 &amp; 1 \\
+88 &amp; 2 \\
+79 &amp; 1 \\
+84 &amp; 1 \\
+90 &amp; 2 \\
+95 &amp; 1 \\
+\end{array}
+\]</span></p>
+<p>The mode is <span class="math inline">\(85\)</span> since it appears most frequently (4 times).</p>
+<p>Thus, the mode exam score for these university students is <span class="math inline">\(85\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="measures-of-dispersion---range-variance-and-standard-deviation" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Measures of Dispersion - Range, Variance, and Standard Deviation<a href="index.html#measures-of-dispersion---range-variance-and-standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Measures of dispersion quantify the spread or variability of a dataset. Understanding these measures is essential for assessing the variability of data points around the central tendency. In this lecture, we’ll cover the range, variance, and standard deviation, along with their formulas and practical examples.</p>
+<div id="range" class="section level3 hasAnchor" number="1.6.1">
+<h3><span class="header-section-number">1.6.1</span> Range<a href="index.html#range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The range is the simplest measure of dispersion and represents the difference between the largest and smallest values in a dataset.</p>
+<div id="formula" class="section level4 hasAnchor" number="1.6.1.1">
+<h4><span class="header-section-number">1.6.1.1</span> Formula:<a href="index.html#formula" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+\text{Range} = \text{Maximum Value} - \text{Minimum Value}
+\]</span></p>
+</div>
+<div id="example-6" class="section level4 hasAnchor" number="1.6.1.2">
+<h4><span class="header-section-number">1.6.1.2</span> Example:<a href="index.html#example-6" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the following dataset: <span class="math inline">\(X = \{10, 15, 20, 25, 30\}\)</span>. To find the range:</p>
+<p><span class="math display">\[
+\text{Range} = 30 - 10 = 20
+\]</span></p>
+<p>So, the range of dataset <span class="math inline">\(X\)</span> is <span class="math inline">\(20\)</span>.</p>
+</div>
+</div>
+<div id="variance" class="section level3 hasAnchor" number="1.6.2">
+<h3><span class="header-section-number">1.6.2</span> Variance<a href="index.html#variance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Variance measures the average squared deviation of each data point from the mean of the dataset. It provides a measure of the dispersion of data points around the mean.</p>
+<div id="formula-1" class="section level4 hasAnchor" number="1.6.2.1">
+<h4><span class="header-section-number">1.6.2.1</span> Formula:<a href="index.html#formula-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+\text{Variance} (\sigma^2) = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}
+\]</span>
+Where:
+- <span class="math inline">\(x_i\)</span> represents each individual value,
+- <span class="math inline">\(\bar{x}\)</span> is the mean of the dataset,
+- <span class="math inline">\(n\)</span> is the total number of values.</p>
+</div>
+<div id="example-7" class="section level4 hasAnchor" number="1.6.2.2">
+<h4><span class="header-section-number">1.6.2.2</span> Example:<a href="index.html#example-7" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the dataset: <span class="math inline">\(Y = \{12, 15, 20, 25, 30\}\)</span>. First, find the mean:</p>
+<p><span class="math display">\[
+\bar{x} = \frac{12 + 15 + 20 + 25 + 30}{5} = \frac{102}{5} = 20.4
+\]</span></p>
+<p>Then, calculate the variance:</p>
+<p><span class="math display">\[
+\text{Variance} (\sigma^2) = \frac{(12-20.4)^2 + (15-20.4)^2 + (20-20.4)^2 + (25-20.4)^2 + (30-20.4)^2}{5}
+\]</span>
+<span class="math display">\[
+= \frac{67.56 + 30.36 + 0.16 + 21.16 + 91.36}{5} = \frac{210.6}{5} = 42.12
+\]</span></p>
+<p>So, the variance of dataset <span class="math inline">\(Y\)</span> is <span class="math inline">\(42.12\)</span>.</p>
+</div>
+<div id="example-8" class="section level4 hasAnchor" number="1.6.2.3">
+<h4><span class="header-section-number">1.6.2.3</span> Example<a href="index.html#example-8" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Consider the following dataset representing the exam scores of 20 university students:</p>
+<p><span class="math display">\[
+\begin{array}
+\textbf{Student ID} &amp; \textbf{Exam Score} \\
+2          &amp; 85         \\
+3          &amp; 92         \\
+4          &amp; 67         \\
+5          &amp; 71         \\
+6          &amp; 88         \\
+7          &amp; 79         \\
+8          &amp; 84         \\
+9          &amp; 90         \\
+10         &amp; 95         \\
+11         &amp; 62         \\
+12         &amp; 93         \\
+13         &amp; 75         \\
+14         &amp; 82         \\
+15         &amp; 87         \\
+16         &amp; 89         \\
+17         &amp; 83         \\
+18         &amp; 77         \\
+19         &amp; 80         \\
+20         &amp; 91         \\
+\end{array}
+\]</span>
+To compute the variance of the exam scores, we’ll follow these steps:</p>
+<ol style="list-style-type: decimal">
+<li>Calculate the mean of the exam scores.</li>
+<li>Compute the squared difference between each exam score and the mean.</li>
+<li>Find the average of the squared differences.</li>
+</ol>
+<p>Let’s calculate the variance:</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the mean:
+<span class="math display">\[
+\text{Mean} = \frac{\sum \text{Exam Scores}}{\text{Number of Students}}
+\]</span>
+<span class="math display">\[
+\text{Mean} = \frac{1689}{20} = 84.45
+\]</span></p></li>
+<li><p>Compute the squared differences between each exam score and the mean:</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{array}
+  \textbf{Exam Score} &amp; \textbf{Squared Difference} \\
+78         &amp; (78 - 84.45)^2 = 41.60 \\
+85         &amp; (85 - 84.45)^2 = 0.20 \\
+...        &amp; ... \\
+91         &amp; (91 - 84.45)^2 = 42.89 \\
+\end{array}
+\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Find the average of the squared differences:
+<span class="math display">\[
+\text{Variance} = \frac{\sum \text{Squared Differences}}{\text{Number of Students}}
+\]</span>
+<span class="math display">\[
+\text{Variance} = \frac{862.55}{20} = 43.13
+\]</span></li>
+</ol>
+<p>So, the variance of the exam scores for these university students is <span class="math inline">\(43.13\)</span>.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+### Standard Deviation</p>
+<p>The standard deviation is the square root of the variance. It provides a measure of the dispersion of data points around the mean, in the same units as the original data.</p>
+</div>
+<div id="formula-2" class="section level4 hasAnchor" number="1.6.2.4">
+<h4><span class="header-section-number">1.6.2.4</span> Formula:<a href="index.html#formula-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+\text{Standard Deviation} (\sigma) = \sqrt{\text{Variance}}
+\]</span></p>
+</div>
+<div id="example-9" class="section level4 hasAnchor" number="1.6.2.5">
+<h4><span class="header-section-number">1.6.2.5</span> Example:<a href="index.html#example-9" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>To calculate the standard deviation of exam scores, we first need to compute the variance as shown in the previous example. Once we have the variance, we can take the square root of it to obtain the standard deviation.</p>
+<p>Using the same dataset of exam scores:</p>
+<ul>
+<li>Mean of exam scores: <span class="math inline">\(\bar{x} = 84.45\)</span></li>
+<li>Variance of exam scores: <span class="math inline">\(s^2 = 43.13\)</span></li>
+</ul>
+<p>The formula to calculate the standard deviation (<span class="math inline">\(s\)</span>) is:</p>
+<p><span class="math display">\[
+s = \sqrt{s^2}
+\]</span></p>
+<p>Substituting the variance value into the formula:</p>
+<p><span class="math display">\[
+s = \sqrt{43.13} \approx 6.57
+\]</span></p>
+<p>Thus, the standard deviation of the exam scores for these university students is approximately <span class="math inline">\(6.57\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="exploring-graphs-in-statistical-analysis" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Exploring Graphs in Statistical Analysis<a href="index.html#exploring-graphs-in-statistical-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Graphs are powerful tools for visualizing data and understanding relationships between variables. We will discuss when to use each type of graph, how best to use them, and the appropriate kind of data for each graph.</p>
+<div id="histograms" class="section level3 hasAnchor" number="1.7.1">
+<h3><span class="header-section-number">1.7.1</span> 1. Histograms<a href="index.html#histograms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use:</strong> Histograms are used to visualize the distribution of a single continuous variable.</li>
+<li><strong>How to use:</strong> Plot the frequency distribution of data using bars. Adjust the number of bins to balance detail and smoothness.</li>
+<li><strong>Appropriate data:</strong> Continuous numerical data, such as exam scores, heights, or weights.</li>
+</ul>
+</div>
+<div id="bar-charts" class="section level3 hasAnchor" number="1.7.2">
+<h3><span class="header-section-number">1.7.2</span> 2. Bar Charts<a href="index.html#bar-charts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use:</strong> Bar charts are used to compare the frequency or proportion of different categories.</li>
+<li><strong>How to use:</strong> Plot bars for each category with the height representing the frequency or proportion. Ensure clear labeling and spacing between bars.</li>
+<li><strong>Appropriate data:</strong> Categorical or ordinal data, such as survey responses, product categories, or rating scales.</li>
+</ul>
+</div>
+<div id="boxplot-box-and-whisker-plot" class="section level3 hasAnchor" number="1.7.3">
+<h3><span class="header-section-number">1.7.3</span> 3. Boxplot (Box-and-Whisker Plot)<a href="index.html#boxplot-box-and-whisker-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use</strong>: Boxplots are useful for displaying the distribution and identifying outliers in continuous data. They provide a visual summary of the central tendency, variability, and skewness of the data.</li>
+<li><strong>How to use</strong>: Interpret the central line (median), box (interquartile range), and whiskers (range of data). Identify outliers using individual points.</li>
+<li><strong>Appropriate data</strong>: Continuous data with a large number of observations, especially when comparing multiple groups.</li>
+</ul>
+</div>
+<div id="scatterplots" class="section level3 hasAnchor" number="1.7.4">
+<h3><span class="header-section-number">1.7.4</span> 4. Scatterplots<a href="index.html#scatterplots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use:</strong> Scatterplots are used to visualize the relationship between two continuous variables.</li>
+<li><strong>How to use:</strong> Plot points representing individual data points with one variable on each axis. Look for patterns, trends, or correlations.</li>
+<li><strong>Appropriate data:</strong> Paired numerical data, such as height vs. weight, temperature vs. sales.</li>
+</ul>
+</div>
+<div id="line-graphs" class="section level3 hasAnchor" number="1.7.5">
+<h3><span class="header-section-number">1.7.5</span> 5. Line Graphs<a href="index.html#line-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use:</strong> Line graphs are used to display trends or changes over time.</li>
+<li><strong>How to use:</strong> Plot data points connected by lines to show the trend. Use clear labeling and ensure a consistent time interval on the x-axis.</li>
+<li><strong>Appropriate data:</strong> Time series data, such as stock prices, temperature over months, or sales over years.</li>
+</ul>
+</div>
+<div id="pie-chart" class="section level3 hasAnchor" number="1.7.6">
+<h3><span class="header-section-number">1.7.6</span> 6. Pie Chart<a href="index.html#pie-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>When to use</strong>: Pie charts are used to display the composition of a whole and show the relative sizes of different parts.</li>
+<li><strong>How to use</strong>: Divide the circle into slices representing different categories. The size of each slice corresponds to the proportion or percentage of the whole.</li>
+<li><strong>Appropriate data</strong>: Categorical data with a small number of categories, where the focus is on proportions or percentages.</li>
+</ul>
 
+</div>
+</div>
 </div>
             </section>
 
@@ -106,11 +627,10 @@
         </div>
       </div>
 
-<a href="the-pool-of-tears.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="statistical-concepts-and-reasoning.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -129,6 +649,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -137,7 +658,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/index.Rmd",
+"link": "https://github.com/xadex01/INFERENCE_I/edit/main/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -145,10 +666,14 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/index.Rmd",
+"link": "https://github.com/xadex01/INFERENCE_I/blob/main/index.Rmd",
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -156,6 +681,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

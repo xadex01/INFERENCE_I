@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Statistical Concepts and Reasoning | Inference I</title>
+  <meta name="description" content="Chapter 2 Statistical Concepts and Reasoning | Inference I" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Statistical Concepts and Reasoning | Inference I" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Statistical Concepts and Reasoning | Inference I" />
+  
+  
+  
+
+<meta name="author" content="AbdulHafiz Abba" />
+
+
+<meta name="date" content="2024-03-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="relationships-between-measurement-variables.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inference I</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction to Statistical Data - Sources, Collection, and Preliminary Analysis</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#sources-of-data"><i class="fa fa-check"></i><b>1.1</b> Sources of Data</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#defining-a-common-language"><i class="fa fa-check"></i><b>1.2</b> Defining a Common Language</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#example-variables"><i class="fa fa-check"></i><b>1.2.1</b> Example Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#types-of-data"><i class="fa fa-check"></i><b>1.3</b> Types of Data</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#primary-data"><i class="fa fa-check"></i><b>1.3.1</b> Primary Data</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#secondary-data"><i class="fa fa-check"></i><b>1.3.2</b> Secondary Data</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#examples"><i class="fa fa-check"></i><b>1.3.3</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#collection-methods"><i class="fa fa-check"></i><b>1.4</b> Collection Methods</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#descriptive-statistics"><i class="fa fa-check"></i><b>1.5</b> Descriptive Statistics</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>1.5.1</b> Measures of Central Tendency</a></li>
+<li class="chapter" data-level="1.5.2" data-path="index.html"><a href="index.html#mean"><i class="fa fa-check"></i><b>1.5.2</b> Mean</a></li>
+<li class="chapter" data-level="1.5.3" data-path="index.html"><a href="index.html#median"><i class="fa fa-check"></i><b>1.5.3</b> Median</a></li>
+<li class="chapter" data-level="1.5.4" data-path="index.html"><a href="index.html#example-3"><i class="fa fa-check"></i><b>1.5.4</b> Example</a></li>
+<li class="chapter" data-level="1.5.5" data-path="index.html"><a href="index.html#mode"><i class="fa fa-check"></i><b>1.5.5</b> Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#measures-of-dispersion---range-variance-and-standard-deviation"><i class="fa fa-check"></i><b>1.6</b> Measures of Dispersion - Range, Variance, and Standard Deviation</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#range"><i class="fa fa-check"></i><b>1.6.1</b> Range</a></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#variance"><i class="fa fa-check"></i><b>1.6.2</b> Variance</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#exploring-graphs-in-statistical-analysis"><i class="fa fa-check"></i><b>1.7</b> Exploring Graphs in Statistical Analysis</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#histograms"><i class="fa fa-check"></i><b>1.7.1</b> 1. Histograms</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#bar-charts"><i class="fa fa-check"></i><b>1.7.2</b> 2. Bar Charts</a></li>
+<li class="chapter" data-level="1.7.3" data-path="index.html"><a href="index.html#boxplot-box-and-whisker-plot"><i class="fa fa-check"></i><b>1.7.3</b> 3. Boxplot (Box-and-Whisker Plot)</a></li>
+<li class="chapter" data-level="1.7.4" data-path="index.html"><a href="index.html#scatterplots"><i class="fa fa-check"></i><b>1.7.4</b> 4. Scatterplots</a></li>
+<li class="chapter" data-level="1.7.5" data-path="index.html"><a href="index.html#line-graphs"><i class="fa fa-check"></i><b>1.7.5</b> 5. Line Graphs</a></li>
+<li class="chapter" data-level="1.7.6" data-path="index.html"><a href="index.html#pie-chart"><i class="fa fa-check"></i><b>1.7.6</b> 6. Pie Chart</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html"><i class="fa fa-check"></i><b>2</b> Statistical Concepts and Reasoning</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-sample-sizes-and-margin-of-error-in-surveys"><i class="fa fa-check"></i><b>2.1</b> Understanding Sample Sizes and Margin of Error in Surveys</a></li>
+<li class="chapter" data-level="2.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#what-is-the-margin-of-error"><i class="fa fa-check"></i><b>2.2</b> What is the Margin of Error?</a></li>
+<li class="chapter" data-level="2.3" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#interpretation-of-the-margin-of-error"><i class="fa fa-check"></i><b>2.3</b> Interpretation of the Margin of Error</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-margin-of-error-in-surveys-gallup-emotions-report"><i class="fa fa-check"></i><b>2.3.1</b> Understanding Margin of Error in Surveys: Gallup Emotions Report</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#types-of-research-studies"><i class="fa fa-check"></i><b>2.4</b> Types of Research Studies</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#experiments-randomized-experiments"><i class="fa fa-check"></i><b>2.4.1</b> Experiments (Randomized Experiments)</a></li>
+<li class="chapter" data-level="2.4.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#observational-studies"><i class="fa fa-check"></i><b>2.4.2</b> Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-standard-scores"><i class="fa fa-check"></i><b>2.5</b> Understanding Standard Scores</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#what-are-standardized-scores"><i class="fa fa-check"></i><b>2.5.1</b> What are Standardized Scores?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#understanding-the-normal-curve"><i class="fa fa-check"></i><b>2.6</b> Understanding the Normal Curve</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#characteristics-of-normal-distribution"><i class="fa fa-check"></i><b>2.6.1</b> Characteristics of Normal Distribution</a></li>
+<li class="chapter" data-level="2.6.2" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#examples-of-normal-curves"><i class="fa fa-check"></i><b>2.6.2</b> Examples of Normal Curves</a></li>
+<li class="chapter" data-level="2.6.3" data-path="statistical-concepts-and-reasoning.html"><a href="statistical-concepts-and-reasoning.html#the-empirical-rule"><i class="fa fa-check"></i><b>2.6.3</b> The Empirical Rule</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html"><i class="fa fa-check"></i><b>3</b> Relationships Between Measurement Variables</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html#graphs-for-two-different-measurement-variables"><i class="fa fa-check"></i><b>3.1</b> Graphs for Two Different Measurement Variables</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="relationships-between-measurement-variables.html"><a href="relationships-between-measurement-variables.html#example-5.1-graph-of-two-measurement-variables"><i class="fa fa-check"></i><b>3.1.1</b> Example 5.1 Graph of Two Measurement Variables</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Inference I</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statistical-concepts-and-reasoning" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Statistical Concepts and Reasoning<a href="statistical-concepts-and-reasoning.html#statistical-concepts-and-reasoning" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="understanding-sample-sizes-and-margin-of-error-in-surveys" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Understanding Sample Sizes and Margin of Error in Surveys<a href="statistical-concepts-and-reasoning.html#understanding-sample-sizes-and-margin-of-error-in-surveys" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Many sample surveys aim to estimate the percentage of people in a population with a certain characteristic or opinion. You might have heard that these polls often use sample sizes of around 1000 to 1500 people. But why is a sample size of around 1000 commonly used? The answer lies in understanding the concept of the margin of error.</p>
+</div>
+<div id="what-is-the-margin-of-error" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> What is the Margin of Error?<a href="statistical-concepts-and-reasoning.html#what-is-the-margin-of-error" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You know when you’re playing a game and you try to throw a ball into a basket? Sometimes, you don’t throw the ball exactly where you want it to go. That’s kind of like what the margin of error is in surveys.</p>
+<ul>
+<li>The margin of error:
+<ul>
+<li>Measures the reliability of estimates based on survey data.</li>
+<li>Decreases as the sample size increases.</li>
+<li>Doesn’t provide information about bias or other errors in a survey.</li>
+</ul></li>
+</ul>
+<p>For a sample size of 1000, the margin of error for a sample proportion is around 3%. Other inherent survey problems may cause biases of a percent or two, making it often not worth the expense to achieve further improvement in the margin of error by increasing the sample size further.</p>
+<p>The margin of error for most sample estimates depends directly on the square root of the sample size. For instance, having four times as many people in the sample would halve the margin of error, making the survey twice as reliable. Notably, the size of the population doesn’t affect the margin of error.</p>
+</div>
+<div id="interpretation-of-the-margin-of-error" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Interpretation of the Margin of Error<a href="statistical-concepts-and-reasoning.html#interpretation-of-the-margin-of-error" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>If one obtains many unbiased samples of the same size from a defined population, the difference between the sample percent and the true population percent will be within the margin of error at least 95% of the time.</li>
+<li>It’s crucial to understand that the interpretation of the margin of error is based on what would happen if the survey were conducted repeatedly under identical conditions. The margin of error reflects the reliability of the data-gathering process.</li>
+</ul>
+<p>When discussing the margin of error, it’s essential to recognize that we can’t guarantee the difference between the sample percent and the population percent will always be within the margin of error for all possible samples. Hence, statisticians use the laws of probability to ensure that at least 95% of the time, this difference will be within the margin of error.</p>
+<div id="understanding-margin-of-error-in-surveys-gallup-emotions-report" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Understanding Margin of Error in Surveys: Gallup Emotions Report<a href="statistical-concepts-and-reasoning.html#understanding-margin-of-error-in-surveys-gallup-emotions-report" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Gallup Global Emotions Report from March 2016 looked at how people in 140 countries felt in 2015. They asked questions to learn about people’s emotions.</p>
+<p>For example, in Paraguay, they talked to about 1000 adults. They found that 84% of them said they smiled or laughed a lot the day before. Meanwhile, in Syria, they also talked to about 1000 adults, and only about 36% said they smiled or laughed a lot.</p>
+<p>Both surveys had a margin of error of about 3%. But what does that mean?</p>
+<div id="interpretation-of-margin-of-error" class="section level4 hasAnchor" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Interpretation of Margin of Error<a href="statistical-concepts-and-reasoning.html#interpretation-of-margin-of-error" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>If we assume the survey was done fairly, then we can say that the difference between the percent we found and the true percent in the whole population is likely to be within 3%, about 95% of the time.</li>
+<li>So, we’re pretty confident that between 81% to 87% of adults in Paraguay smile or laugh a lot each day.</li>
+<li>Also, because our range (81% to 87%) is all above 72%, we can say we’re quite sure that the rate in Paraguay is higher than the worldwide average of 72%.</li>
+<li>In Syria, even though the population is three times bigger, the margin of error is still about 3%. But remember, the margin of error only tells us about the randomness in the survey. It doesn’t say anything about other issues like not being able to talk to everyone because of safety concerns.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="types-of-research-studies" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Types of Research Studies<a href="statistical-concepts-and-reasoning.html#types-of-research-studies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Research studies can be categorized into two basic types: experiments and observational studies.</p>
+<div id="experiments-randomized-experiments" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Experiments (Randomized Experiments)<a href="statistical-concepts-and-reasoning.html#experiments-randomized-experiments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>What are they?</strong> Experiments involve the researcher creating differences in the explanatory variable by assigning treatments randomly.</li>
+<li><strong>Key Points:</strong>
+<ul>
+<li>Allow for “cause and effect” conclusions if random assignment is used.</li>
+<li>Help minimize the impact of confounding variables.</li>
+<li>Example: Comparing the effectiveness of two teaching methods.</li>
+</ul></li>
+</ul>
+</div>
+<div id="observational-studies" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Observational Studies<a href="statistical-concepts-and-reasoning.html#observational-studies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>What are they?</strong> Observational studies involve observing differences in the explanatory variable without any random assignment of treatments.</li>
+<li><strong>Key Points:</strong>
+<ul>
+<li>Strive for association conclusions since “cause and effect” conclusions are not possible.</li>
+<li>May face challenges with confounding variables.</li>
+<li>Example: Studying the relationship between smoking and wrinkles.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="understanding-standard-scores" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Understanding Standard Scores<a href="statistical-concepts-and-reasoning.html#understanding-standard-scores" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Standardized scores, also known as “standard scores” or “z-scores,” help us understand where an observation stands relative to others in a dataset.</p>
+<div id="what-are-standardized-scores" class="section level3 hasAnchor" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> What are Standardized Scores?<a href="statistical-concepts-and-reasoning.html#what-are-standardized-scores" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Standardized scores measure relative standing on a list by indicating the number of standard deviations above (+) or below (-) the mean a value is.</p></li>
+<li><p>These scores are computed using the formula:</p>
+<p>Standardized Score (Z-score) = (Value - Mean) / Standard Deviation</p></li>
+<li><p>The list of standardized scores always has a mean of 0 and a standard deviation of 1.0 because:</p>
+<ul>
+<li>Subtracting the mean from every value makes the new mean equal zero.</li>
+<li>Dividing every value by the standard deviation makes the new standard deviation equal to 1.</li>
+</ul></li>
+</ul>
+<div id="example-speedometer" class="section level4 hasAnchor" number="2.5.1.1">
+<h4><span class="header-section-number">2.5.1.1</span> Example: Speedometer<a href="statistical-concepts-and-reasoning.html#example-speedometer" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Suppose the gas mileage for compact SUVs in the 2013 model year has a mean of 22 mpg and a standard deviation of 3 mpg.</li>
+<li>An SUV getting 25 mpg would have a standardized score of +1, indicating it’s one standard deviation above the mean.</li>
+<li>Another SUV getting 20.5 mpg would have a standardized score of -0.5, showing it’s one-half of a standard deviation below the mean.</li>
+</ul>
+</div>
+<div id="example-co2-emissions" class="section level4 hasAnchor" number="2.5.1.2">
+<h4><span class="header-section-number">2.5.1.2</span> Example: CO2 Emissions<a href="statistical-concepts-and-reasoning.html#example-co2-emissions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Consider 4-cylinder and 6-cylinder cars’ CO2 emissions in the 2013 model year.</li>
+<li>A Honda Civic emitting 284 ppm would have a z-score of -1.06, while a Toyota Camry emitting 358 ppm would have a z-score of +0.77.</li>
+<li>Despite the absolute ppm difference, the Honda Civic has higher relative CO2 emissions compared to other cars with the same number of cylinders.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="understanding-the-normal-curve" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Understanding the Normal Curve<a href="statistical-concepts-and-reasoning.html#understanding-the-normal-curve" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Many natural measurement variables exhibit a predictable bell-shaped pattern known as the normal distribution. This pattern is characterized by a symmetrical distribution, with most data points clustered around the center and few on the extremes.</p>
+<div id="characteristics-of-normal-distribution" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Characteristics of Normal Distribution<a href="statistical-concepts-and-reasoning.html#characteristics-of-normal-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Variables resulting from the sum or average of similar components tend to follow a normal distribution.</li>
+<li>Examples include the weights of cartons of eggs, which result from the sum of individual egg weights, and psychological measures like stress levels derived from questionnaire scores.</li>
+<li>Such measures within a homogeneous group of individuals often approximate a normal curve.</li>
+</ul>
+</div>
+<div id="examples-of-normal-curves" class="section level3 hasAnchor" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> Examples of Normal Curves<a href="statistical-concepts-and-reasoning.html#examples-of-normal-curves" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="heights-inches" class="section level4 hasAnchor" number="2.6.2.1">
+<h4><span class="header-section-number">2.6.2.1</span> Heights (inches)<a href="statistical-concepts-and-reasoning.html#heights-inches" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>The distribution of heights among Stat 100 students resembles a normal curve.</li>
+<li>The mean height is 66.3 inches, and the median is 66 inches, indicating symmetrical distribution.</li>
+</ul>
+<div class="figure">
+<img src="images/image3.png" alt="" />
+<p class="caption">Histogram of Height</p>
+</div>
+</div>
+<div id="grade-point-average-gpa" class="section level4 hasAnchor" number="2.6.2.2">
+<h4><span class="header-section-number">2.6.2.2</span> Grade Point Average (GPA)<a href="statistical-concepts-and-reasoning.html#grade-point-average-gpa" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>The GPA distribution shows slight left skewness but can roughly be approximated as normal.</li>
+<li>The upper tail of the distribution is clustered due to the capped GPA limit of 4.0.</li>
+<li>Despite the skewness, mean and median values are close, allowing for rough approximations using the normal curve.</li>
+</ul>
+<div class="figure">
+<img src="images/image4.png" alt="" />
+<p class="caption">Histogram of GPA (Mean = 3.25 &amp; Median = 3.3)</p>
+</div>
+</div>
+<div id="number-of-tattoos" class="section level4 hasAnchor" number="2.6.2.3">
+<h4><span class="header-section-number">2.6.2.3</span> Number of Tattoos<a href="statistical-concepts-and-reasoning.html#number-of-tattoos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>The distribution of tattoos is highly skewed to the right, with most students having no tattoos.</li>
+<li>The discrete nature of the variable and the lack of a continuous range lead to gaps in the histogram.</li>
+<li>Due to the extreme skewness and discrete nature, the normal curve should not be used to make any approximations for tattoo data.</li>
+</ul>
+</div>
+</div>
+<div id="the-empirical-rule" class="section level3 hasAnchor" number="2.6.3">
+<h3><span class="header-section-number">2.6.3</span> The Empirical Rule<a href="statistical-concepts-and-reasoning.html#the-empirical-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The empirical rule is a guideline that can be applied when you know that the sample is approximately normally distributed. The empirical rule also helps one to understand what the standard deviation represents.</p>
+<p>The empirical rule says that for any normal (bell-shaped) curve, approximately:</p>
+<ul>
+<li>68%of the values (data) fall within 1 standard deviation of the mean in either direction</li>
+<li>95%of the values (data) fall within 2 standard deviations of the mean in either direction</li>
+<li>99.7%of the values (data) fall within 3 standard deviations of the mean in either direction</li>
+</ul>
+<p><img src="images/image5.png" alt="Emperical rules" />
+### Example: Empirical Rule</p>
+<p>In Example above, we examined the distribution of heights among Stat 100 students, finding it to be normally distributed. Now, we can apply the empirical rule to this dataset.</p>
+<div id="dataset-details" class="section level4 hasAnchor" number="2.6.3.1">
+<h4><span class="header-section-number">2.6.3.1</span> Dataset Details:<a href="statistical-concepts-and-reasoning.html#dataset-details" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Mean (µ): 66.3 inches</li>
+<li>Standard Deviation (σ): 4 inches</li>
+</ul>
+</div>
+<div id="calculations" class="section level4 hasAnchor" number="2.6.3.2">
+<h4><span class="header-section-number">2.6.3.2</span> Calculations:<a href="statistical-concepts-and-reasoning.html#calculations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Mean ± 1(SD) = 66.3 ± 4 inches = (62.3 to 70.3 inches)</li>
+<li>Mean ± 2(SD) = 66.3 ± 2(4) inches = 66.3 ± 8 inches = (58.3 to 74.3 inches)</li>
+<li>Mean ± 3(SD) = 66.3 ± 3(4) inches = 66.3 ± 12 inches = (54.3 to 78.3 inches)</li>
+</ul>
+</div>
+<div id="interpretation" class="section level4 hasAnchor" number="2.6.3.3">
+<h4><span class="header-section-number">2.6.3.3</span> Interpretation:<a href="statistical-concepts-and-reasoning.html#interpretation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Approximately 68% of heights fall between 62.3 and 70.3 inches.</li>
+<li>About 95% of heights lie within the range of 58.3 to 74.3 inches.</li>
+<li>Nearly 99.7% of heights are within the range of 54.3 to 78.3 inches.</li>
+</ul>
+</div>
+<div id="note" class="section level4 hasAnchor" number="2.6.3.4">
+<h4><span class="header-section-number">2.6.3.4</span> Note:<a href="statistical-concepts-and-reasoning.html#note" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Heights smaller than 54.3 inches or taller than 78.3 inches would be very unusual within this sample.</li>
+<li>With 68% of heights within one standard deviation of the mean, the remaining 32% is distributed symmetrically, with 16% falling below 62.3 inches and 16% above 70.3 inches.</li>
+<li>Percentiles in the normal curve are determined by standardized scores, as depicted in Table 8.1 in Chapter 8 of the textbook (page 175). For example, the 23rd percentile corresponds to a standard score of z = -0.74, while the 97th percentile corresponds to z = 1.88.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="relationships-between-measurement-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/xadex01/INFERENCE_I/edit/main/Chapter-2.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/xadex01/INFERENCE_I/blob/main/Chapter-2.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
